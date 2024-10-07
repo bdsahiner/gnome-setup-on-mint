@@ -1,17 +1,3 @@
-### To check Ubuntu extensions
-
-Your locally installed gnome Shell extensions, i.e., these that are installed for your user only, can be listed with the commmand:
-
-`ls ~/.local/share/gnome-shell/extensions/`
-
-You can find out which extensions are enables by querying a dconf setting:
-
-`gsettings get org.gnome.shell enabled-extensions`
-
-System wide installed gnome-shell extensions are listed with the command
-
-`ls /usr/share/gnome-shell/extensions/`
-
 ### Installing Ubuntu Desktop Settings
 
 By installing this package, everything is bundled together, making the process simple and fast. You get a consistent and pre-configured GNOME experience similar to what you would find on a fresh Ubuntu GNOME installation. It also ensures better integration of all GNOME components.
@@ -102,3 +88,18 @@ To remove any lingering Cinnamon or Mint-specific packages:
 `sudo apt remove --purge cinnamon* mintinstall* mintupdate*`
 
 `sudo apt autoremove --purge`
+
+### To check Ubuntu extensions
+
+Your locally installed gnome Shell extensions, i.e., these that are installed for your user only, can be listed with the commmand:
+
+`ls ~/.local/share/gnome-shell/extensions/`
+
+You can find out which extensions are enables by querying a dconf setting:
+
+`gsettings get org.gnome.shell enabled-extensions`
+
+System wide installed gnome-shell extensions are listed with the command
+
+`ls /usr/share/gnome-shell/extensions/`
+
